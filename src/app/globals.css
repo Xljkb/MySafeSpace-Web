@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: 255, 255, 255;
+  /* --md-filter-chip-label-text-font: #fff; */
+}
+
+@font-face {
+  font-family: "Proto Grotesk";
+  src: url(/fonts/proto-grotesk-font) format("ttf");
+}
+
+
+@font-face {
+  font-family: Suisse intl;
+  src: url(/fonts/Suisse_Intl) format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/Roboto) format("ttf");
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb))
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.max-h-70 {
+  max-height: 70%;
+}
+
+.max-h-16-p {
+  max-height: 16%;
+}
+
+.max-w-60-p {
+  max-width: 60%;
+}
+
+.h-90-p {
+  height: 90%;
+}
+
+.h-10-p {
+  height: 10%;
+}
+
+.h-img-block {
+  height: 88%;
+}
+
+.h-desc-block {
+  height: 12%;
+}
+
+.ReactTags__tags {
+  width: 100%;
+}
+.MainTags_tagInputField {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #F5F5F5;
+  border: 1px solid #D9D9D9;
+  margin-bottom: 4px;
+  border-radius: 12px;
+  outline: none;
+}
+.ReactTags__tagInputField {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #F5F5F5;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  outline: none;
+  margin-bottom: 4px;
+}
+.ReactTags__selected {
+  row-gap: 10px;
+}
+.ReactTags__clearAll {
+  padding: 0px;
+}
+.ReactTags__tag { 
+  margin-right: 4px;
+  color: #FFFFFF;
+  background-color: #1D1D1D;
+  border-radius: 6px;
+  font-size: 12px;
+  padding: 4px 8px 4px 8px;
+  white-space: nowrap;
+}
+
+.ReactTags__remove {
+  padding-left: 8px;
+}
+
+/* Пользователь */
+.H1 {
+  font-family: Proto Grotesk, Bold;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; 
+  padding-bottom: 24px;
+}
+
+.H2 {
+  font-family: Proto Grotesk, Regular;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #1D1D1D;
+}
+
+.self-last-baseline {
+  align-self: last baseline;
+}
+
+.H3 {
+  font-family: Proto Grotesk, Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  padding-bottom: 16px;
+}
+.text {
+  font-family: Suisse Intl, Regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.button_text {
+  font-family: Suisse Intl, Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.tag_text {
+  font-family: Suisse Intl, Medium;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  color: #FFF;
+}
+
+.links1 {
+  font-family: Suisse Intl, Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  padding-bottom: 8px;
+}
+
+.links2 {
+  font-family: Suisse Intl, Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+
+.navigation_text {
+  font-family: Suisse Intl, Medium;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  color: #FFF;
+}
+
+.description {
+  font-family: Suisse Intl, Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.menu {
+  font-family: Suisse Intl, Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.path {
+  font-family: Suisse Intl, Medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+} 
+/* path не забыть, изменил на  .navigation_text */
+
+/* Админ */
+.admin_text {
+  font-family: Roboto, Regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+} 
+
+.admin_title {
+  font-family: Roboto, Medium;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--character-title-85, rgba(0, 0, 0, 0.85));
+  
+} 
+.admin_button {
+  font-family: Roboto, Regualar;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+} 
+.admin_status_download {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+} 
+
+.admin_photo_status {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Затемнение фона */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #ffffff; 
+  border-radius: 12px; 
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень */
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  padding-right: 15px;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+
+.download-button {
+  background-color: #FFCF08;
+  height: 48px;
+  width: 368px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.note-text {
+  max-width: 350px;
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  color: #1D1D1D;
+}
+
+.download-text {
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: auto;
+  color: #1D1D1D;
+}
+
+/* df */
+
+.bottom-bar {
+  position: sticky;
+  bottom: 0;
+  left: 108px;
+  right: 108px;
+  height: 80px;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border: 1px solid #D9D9D9;
+  border-bottom: none; 
+  border-radius: 12px 12px 0 0;
+}
+
+.head-bar {
+  position: sticky;
+  bottom: 0;
+  left: 108px;
+  right: 108px;
+  height: 80px;
+  /* background-color: #FAFAFA; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  /* border: 1px solid #D9D9D9; */
+  border-bottom: none; 
+  border-radius: 12px 12px 0 0;
+}
+
+.right-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  min-width: 104px;
+  height: 32px;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: regular;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  border-width: 1px;
+  cursor: pointer;
+  flex-grow: 1;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.button:first-child {
+  margin-left: 0;
+}
