@@ -55,5 +55,14 @@ export const images: Img[] = [
             lat : 55.4506,
             long : 35.3704
         }
+    },
+    {
+        url : "https://img.razrisyika.ru/kart/107/427721-omogus-23.jpg",
+        width : 1200,
+        height : 1411,
+        coords : {
+            lat : 55.4506,
+            long : 35.3704
+        }
     }
 ]
