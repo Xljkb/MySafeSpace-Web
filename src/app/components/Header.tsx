@@ -22,6 +22,15 @@ export default function Navbar() {
     const handleOnProfileClick = () => {
         router.push("/admin")
     }
+    const handleOnDiaryClick = () => {
+        router.push("/admin")
+    }
+    const handleOnProgressClick = () => {
+        router.push("/admin")
+    }
+    const handleOnProfClick = () => {
+        router.push("/admin")
+    }
 
     return (
         <nav className="flex w-full items-center bg-[#1D1D1D]">
