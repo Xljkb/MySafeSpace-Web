@@ -215,7 +215,7 @@ export default function Body() {
             <main className="flex-1 w-full items-center px-[41px] pb-[300px] pt-[50px] mx-auto justify-between container">
                 <div id="Container" className="mb-[40px]">
                     <div className="flex">
-                        <p className="H2">Избранное</p>
+                        <p className="H2 mb-[30px]">Избранное</p>
                     </div>
                     
                     
