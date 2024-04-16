@@ -17,6 +17,7 @@ export default function RusspassHome() {
             <div className="relative">
                 <Header/>
                 <Bodymss/>
+                <Footer/>
             </div>
             {/* <div className="relative bg-[#1D1D1D]">
                 <Navbar/>

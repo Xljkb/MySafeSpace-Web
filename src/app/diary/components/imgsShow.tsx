@@ -25,12 +25,6 @@ const Filter = ( name : string) => {
     };
 
     return (
-        // <div className="flex gap-x-[8px] items-center">
-        //     <input type="checkbox" name={name} className="w-[16px] h-[16px] rounded-[4px] border border-[#A6A6A6] accent-[#1890FF] acc"/>
-        // </div>
-        
-        // <div className="flex gap-x-[8px] items-center relative">
-        //     <input type="checkbox" name={name} className="w-[16px] h-[16px] rounded-[4px] border border-[#A6A6A6] accent-[#1890FF] acc" onChange={handleFilterClick} />
 
         <div className="relative">
             <input 

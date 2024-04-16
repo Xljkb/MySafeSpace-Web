@@ -56,6 +56,7 @@ const ModalWindow = () => {
 // БОБИС ТУТ ПЕРЕСТАЛ КАКАТЬ
 
 import { Gallery } from "react-gallery-grid"
+import { images } from ".//mocksDiary"
 import { url } from "inspector"
 import { MuiChipsInput } from "mui-chips-input"
 import { Tag, WithContext as ReactTags } from "react-tag-input"
@@ -211,10 +212,24 @@ export default function Body() {
     return (
         <> 
             <main className="flex-1 w-full items-center px-[41px] pb-[300px] pt-[50px] mx-auto justify-between container">
+                <div id="Container" className="mb-[40px]">
+                    <div className="flex">
+                        <p className="H2 mb-[30px]">Избранное</p>
+                    </div>
+
+                    <div className=" flex-row h-full mx-auto container">{MainGallery(images)}</div>
+                </div>
+
+                <div id="Container" className="mb-[40px]">
+                    <div className="flex">
+                        <p className="H2 mb-[30px]">Как походы помогают разгрузиться</p>
+                    </div>
+                    <div className=" flex-row h-full mx-auto container">{MainGallery(images)}</div>
+                </div>
 
                 <div id="Container" className="mb-[40px]">
                 <div className="flex">
-                    <h1 className="H2 mb-[20px]">Избраннное</h1>
+                    <p className="H2 mb-[30px]">Как походы помогают разгрузиться</p>
                 </div>
                     <div className="flex-row h-full mx-auto container">
                         <div className="flex flex-row relative"> {/* Добавьте контейнер для фотографий */}

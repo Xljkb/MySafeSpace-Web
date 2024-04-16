@@ -1,13 +1,14 @@
-import AdminFooter from "./components/adminFooter"
-import AdminHeader from "./components/adminHeader"
-import AdminGallery from "./components/imgsShow"
+import Footer from "./components/diaryFooter"
+import Header from "./components/diaryHeader"
+import Gallery from "./components/imgsShow"
+import Body from "./components/diaryBody" 
 
 export default function AdminMain() {
     return (
         <main className="h-full w-full bg-white">
-            <AdminHeader/>
-            <AdminGallery/>
-            <AdminFooter/>
+            <Header/>
+            <Body/>
+            <Footer/>
         </main>
     )
 }
