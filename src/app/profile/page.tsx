@@ -1,7 +1,7 @@
-import Footer from "./components/diaryFooter"
-import Header from "./components/diaryHeader"
-import Gallery from "./components/imgsShow"
-import Body from "./components/diaryBody" 
+import Footer from "./components/profileFooter"
+import Header from "./components/profileHeader"
+
+import Body from "./components/profileBody" 
 
 export default function AdminMain() {
     return (

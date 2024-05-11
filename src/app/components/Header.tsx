@@ -33,6 +33,7 @@ export default function Navbar() {
     }
 
     return (
+        // Эллементы Хэдера
         <nav className="flex w-full items-center">
             <div className="flex w-full items-center px-[41px] pb-[20px] pt-[50px]  mx-auto justify-between container">
                 <div className="flex items-center">

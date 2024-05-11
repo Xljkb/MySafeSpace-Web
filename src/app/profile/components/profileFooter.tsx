@@ -33,7 +33,7 @@ export default function AdminFooter() {
     }
 
     return (
-        <nav className="flex w-full items-center">
+        <section className="flex w-full items-center mb-0">
             <div className="flex w-full items-center px-[41px] pb-[20px] pt-[50px]  mx-auto justify-between container">
                 <div className="flex items-center">
                     <Image src={Logo} alt="Logo"/>
@@ -62,6 +62,6 @@ export default function AdminFooter() {
 
                 </div>
             </div>
-        </nav>
+        </section>
     )
 }

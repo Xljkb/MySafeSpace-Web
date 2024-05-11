@@ -11,11 +11,6 @@ import RUS_Flag from "../../../public/assets/russian_flag.svg"
 import Bell from "../../../public/assets/bell.svg"
 import Profile from "../../../public/assets/profile.svg"
 
-const navList = [
-    { name:"Главная"},
-    { name:"Дневник"},
-    { name:"Прогресc"},
-]
 
 export default function AdminFooter() {
     const router = useRouter()
@@ -25,11 +20,8 @@ export default function AdminFooter() {
     const handleOnDiaryClick = () => {
         router.push("/diary")
     }
-    const handleOnProgressClick = () => {
-        router.push("/admin")
-    }
     const handleOnProfClick = () => {
-        router.push("/admin")
+        router.push("/profile")
     }
 
     return (
@@ -55,7 +47,7 @@ export default function AdminFooter() {
                         </button> */}
                     </div>
                     
-                    <button className="flex gap-x-[8px] group" onClick={handleOnProfileClick}>
+                    <button className="flex gap-x-[8px] group" onClick={handleOnProfClick}>
                         {/* <Image src={Profile} alt="Profile" className=""/> */}
                         <p className="links1 group-hover:text-[#4c4c4c]">Профиль</p>
                     </button>

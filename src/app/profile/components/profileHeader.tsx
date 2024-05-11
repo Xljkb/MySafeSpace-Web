@@ -19,7 +19,7 @@ const navList = [
 
 export default function Navbar() {
     const router = useRouter()
-    const handleOnProfileClick = () => {
+    const handleOnMainClick = () => {
         router.push("/")
     }
     const handleOnDiaryClick = () => {
@@ -28,8 +28,8 @@ export default function Navbar() {
     const handleOnProgressClick = () => {
         router.push("/admin")
     }
-    const handleOnProfClick = () => {
-        router.push("/admin")
+    const handleOnProfileClick = () => {
+        router.push("/profile")
     }
 
     return (
@@ -42,7 +42,7 @@ export default function Navbar() {
                 <div className="flex pl-[48px] items-center gap-x-[20px]">
 
                     <div className="flex pl-[48px] items-center gap-x-[20px]">
-                        <button className="flex gap-x-[8px] group" onClick={handleOnProfileClick}>
+                        <button className="flex gap-x-[8px] group" onClick={handleOnMainClick}>
                             <p className="links1 group-hover:text-[#4c4c4c]">Главная</p>
                         </button>
 
