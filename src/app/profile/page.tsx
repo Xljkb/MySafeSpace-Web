@@ -1,5 +1,5 @@
-import Footer from "./components/profileFooter"
-import Header from "./components/profileHeader"
+import Footer from "../components/footer"
+import Header from "../components/Header"
 
 import Body from "./components/profileBody" 
 

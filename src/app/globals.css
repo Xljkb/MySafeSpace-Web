@@ -50,7 +50,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #1D1D1D;
 }
 
 .self-last-baseline {
@@ -331,7 +330,7 @@ body {
   margin-top: 20px;
 }
 
-/* styles/ArticleCard.css */
+
 .article-card {
   position: relative;
   width: 100%;
@@ -347,7 +346,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный фон для текста */
+  background-color: rgba(0, 0, 0, 0.5); 
   color: white;
   width: 100%;
   padding: 10px;
@@ -355,7 +354,7 @@ body {
   border-bottom-right-radius: 8px;
 }
 
-/* styles/Home.css */
+
 .articles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -363,13 +362,12 @@ body {
   padding: 20px;
 }
 
-/* components/ArticleCard.module.css */
 .card {
   display: block;
   text-decoration: none;
-  color: black; /* Цвет текста */
-  border: 1px solid #ccc; /* Граница карточки */
-  border-radius: 8px; /* Радиус границы */
+  color: black; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
   overflow: hidden;
 }
 
@@ -381,11 +379,93 @@ body {
 
 .title {
   padding: 10px;
-  font-size: 16px; /* Размер шрифта */
+  font-size: 16px; 
 }
 
 .container_card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Выравнивание карточек по левому краю */
+  justify-content: flex-start; 
+}
+
+.med_card {
+  position: relative;
+  width: 284px; 
+  height: 300px; 
+  border-radius: 20px; 
+  overflow: hidden; /* обрезает всё, что выходит за границы */
+}
+
+.title_med {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.dosage {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.counter {
+  bottom: 10px;
+  left: 10px;
+  margin-bottom: 10px;
+}
+
+.plus-button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* стиль курсора при наведении */
+}
+
+.minusButton {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.med_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; /* отступы внутри карточки */
+  padding-right: 20px;
+  color: white; /* цвет текста */
+  background: rgba(0, 0, 0, 0.5); /* полупрозрачный черный фон для улучшения читаемости текста */
+}
+
+.med_content_main {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px; /* отступы внутри карточки */
+  padding-right: 20px;
+  color: white; /* цвет текста */
+  background: rgba(0, 0, 0, 0.5); /* полупрозрачный черный фон для улучшения читаемости текста */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* гарантирует, что изображение полностью покроет card */
+}
+
+.med_content_container {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px; /* отступы внутри карточки */
+  padding-right: 20px;
 }

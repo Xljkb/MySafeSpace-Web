@@ -64,72 +64,51 @@ const HomePage: React.FC = () => {
           {/* Контейнер для центрирования карточек на странице */}
           <div style={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'wrap', padding: '0'}}>
             <PhotoCard
-              title="Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
+              title="Смысл жизни: нужно ли его искать"
+              imageUrl="https://uploads.yasno.live/cdn-cgi/image/format=auto,quality=85,fit=contain,dpr=2,width=730/uploads/post_image-image/eN9Bf2Ov/%D0%A1%D0%BC%D1%8B%D1%81%D0%BB_%D0%B6%D0%B8%D0%B7%D0%BD%D0%B8__%D0%BD%D1%83%D0%B6%D0%BD%D0%BE_%D0%BB%D0%B8_%D0%B5%D0%B3%D0%BE_%D0%B8%D1%81%D0%BA%D0%B0%D1%82%D1%8C__%D0%B1%D0%BB%D0%BE%D0%B3_2.png"
               onClick={handleCardClick}
             />
             <PhotoCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
+              title="Что стоит за обидой?"
+              imageUrl="https://uploads.yasno.live/cdn-cgi/image/format=auto,quality=85,fit=contain,dpr=2,width=730/uploads/post_image-image/8vqGfaYo/Frame_6__1_.png"
               onClick={handleCardClick}
             />
             <PhotoCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
+              title="Семья как система"
+              imageUrl="https://uploads.yasno.live/cdn-cgi/image/format=auto,quality=85,fit=contain,dpr=2,width=730/uploads/post_image-image/no8RfLDv/8_%D1%81%D1%82%D0%B0%D0%B4%D0%B8%D0%B8%CC%86-1.png"
               onClick={handleCardClick}
             />
-            <PhotoCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
-              onClick={handleCardClick}
-            />
-            <PhotoCard
-              title="Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
-              onClick={handleCardClick}
-            />
-            <PhotoCard
-              title="Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
-              onClick={handleCardClick}
-            />
-            <PhotoCard
-              title="Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок"
-              imageUrl="https://sun1-16.userapi.com/impg/YkooogzL1b-XYzFuhR3w90bLvxPbgXhD210fnw/hGP_n-6qOPQ.jpg?size=1453x2160&quality=96&sign=c7ab0434acd5edde19ee6d597a6eebd1&type=album"
-              onClick={handleCardClick}
-            />
-            
           </div>
         </div>
         <div id="Container" className="mb-[40px]">
           <div className="flex">
-            <h1 className="H2 mb-[20px]">Примеры еще</h1>
+            <h1 className="H2 mb-[20px]">Статьи о психологии</h1>
           </div>
           {/* Контейнер для центрирования карточек на странице */}
           <div style={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'wrap', padding: '0'}}>
             <PhotoCard
-              title="Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
+              title="Почему мы боимся любить?"
+              imageUrl="https://uploads.yasno.live/cdn-cgi/image/format=auto,quality=85,fit=contain,dpr=2,width=730/uploads/post_image-image/4v7OfEev/%D1%81%D0%B5%D0%BC%D1%8C%D1%8F2.jpg"
               onClick={handleCardClick}
             />
             <PhotoCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
+              title="Почему мы перестаем друг друга любить"
+              imageUrl="https://uploads.yasno.live/cdn-cgi/image/format=auto,quality=85,fit=contain,dpr=2,width=730/uploads/post_image-image/Kv4lf1Ev/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83_%D0%BC%D1%8B_%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%B5%D0%BC_%D0%B4%D1%80%D1%83%D0%B3_%D0%B4%D1%80%D1%83%D0%B3%D0%B0_%D0%BB%D1%8E%D0%B1%D0%B8%D1%82%D1%8C_%D0%B1%D0%BB%D0%BE%D0%B3_1.png"
               onClick={handleCardClick}
             />
             <PhotoCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
+              title="Как мы выбираем партнеров"
+              imageUrl="https://uploads.yasno.live/cdn-cgi/image/format=auto,quality=85,fit=contain,dpr=2,width=730/uploads/post_image-image/3QWwfEjQ/%D0%9A%D0%B0%D0%BA_%D0%BC%D1%8B_%D0%B2%D1%8B%D0%B1%D0%B8%D1%80%D0%B0%D0%B5%D0%BC_%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D0%BE%D0%B2.jpg"
               onClick={handleCardClick}
             />
             <PhotoCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
+              title="Зрелая зависимость"
+              imageUrl="https://uploads.yasno.live/cdn-cgi/image/format=auto,quality=85,fit=contain,dpr=2,width=730/uploads/post_image-image/7oK1fqDv/Frame_20.png"
               onClick={handleCardClick}
             />
             <PhotoCard
-              title="Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
+              title="Существуют ли идеальные пары?"
+              imageUrl="https://uploads.yasno.live/cdn-cgi/image/format=auto,quality=85,fit=contain,dpr=2,width=730/uploads/post_image-image/WN19f5PN/%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%B1%D0%BB%D0%BE%D0%B3_2.png"
               onClick={handleCardClick}
             />
           </div>
@@ -140,3 +119,5 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
+//https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album

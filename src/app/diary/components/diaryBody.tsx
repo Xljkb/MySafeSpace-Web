@@ -69,7 +69,8 @@ import ProgressButton from "/public/assets/Прогресс.svg"
 
 import { useRouter } from "next/navigation"
 import React from 'react';
-import PillsCard from './PillsCard';
+import PillsCard from './MedicineCard';
+import MedicineCard from '../components/MedicineCard';
 
 // Главная страница приложения
 const HomePage: React.FC = () => {
@@ -89,33 +90,13 @@ const HomePage: React.FC = () => {
             <h1 className="H2 mb-[20px]">Мои медикаменты</h1>
           </div>
           {/* Контейнер для центрирования карточек на странице */}
-          <div style={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'wrap', padding: '0'}}>
-            <PillsCard
-              title="Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок Заголовок"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
-              onClick={handleCardClick}
-            />
-            <PillsCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
-              onClick={handleCardClick}
-            />
-            <PillsCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
-              onClick={handleCardClick}
-            />
-            <PillsCard
-              title="Заголовок карточки"
-              imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album"
-              onClick={handleCardClick}
-            />
-            <PillsCard
-              title=""
-              imageUrl="/public/assets/Прогресс.svg"
-              onClick={handleCardClick}
-            />
+          <div style={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'wrap', padding: '0px', marginRight: '0'}}>
             
+            <MedicineCard name="Лекарство #1" imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album" dosage="1 таблетка после завтрака" limit={1} />
+            <MedicineCard name="Лекарство #2" imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album" dosage="3 таблетка после еды" limit={3} />
+            <MedicineCard name="Лекарство #3" imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album" dosage="1 таблетка после 18:00" limit={1} />
+            <MedicineCard name="Лекарство #4" imageUrl="https://sun1-89.userapi.com/impg/n0zFxJN3xRwL6JZcoipndNgitLeIYIPGTWU8wg/0nAxv14cQbQ.jpg?size=1600x1067&quality=96&sign=4057aa38003bfe07f2ae928ad7b5a477&type=album" dosage="4 таблетки каждые 3 часа" limit={4} />
+
           </div>
         </div>
      
