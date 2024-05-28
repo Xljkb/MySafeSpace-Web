@@ -120,6 +120,7 @@
 
 import React, { useState } from 'react';
 import * as XLSX from 'xlsx';
+import axios from 'axios';
 
 const EntriesForm = ({ onSave }) => {
   const [entries, setEntries] = useState(Array(8).fill(''));
@@ -163,18 +164,8 @@ const EntriesForm = ({ onSave }) => {
     formData.append('file', blob, 'results.xlsx');
 
     try {
-      const response = await fetch('/api/upload', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error(`Network response was not ok: ${response.statusText}`);
-      }
-
-      const result = await response.json();
-      console.log('Server response:', result);
-      setResult(result.data);
+      const response = await axios.post('/api/saveEntries', formData);
+      setResult(response.data);
     } catch (error) {
       console.error('Error:', error);
       setResult('Ошибка при отправке данных на сервер');

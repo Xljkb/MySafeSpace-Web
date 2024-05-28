@@ -1,7 +1,7 @@
 import formidable from 'formidable';
 import fs from 'fs';
-import FormData from 'form-data';
 import axios from 'axios';
+import FormData from 'form-data';
 
 export const config = {
   api: {
@@ -19,11 +19,15 @@ export default async (req, res) => {
 
       const file = files.file;
 
+      // Преобразуем SpooledTemporaryFile в обычный файл
+      const filePath = file.filepath;
+      const fileStream = fs.createReadStream(filePath);
+
       const formData = new FormData();
-      formData.append('file', fs.createReadStream(file.filepath));
+      formData.append('file', fileStream, 'results.xlsx');
 
       try {
-        const response = await axios.post('http://localhost:5000/endpoint', formData, {
+        const response = await axios.post('http://localhost:8000/predict', formData, {
           headers: {
             ...formData.getHeaders(),
           },
