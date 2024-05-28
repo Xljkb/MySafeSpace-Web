@@ -1,16 +1,7 @@
-
 "use client"
-
-import { Line } from 'react-chartjs-2';
-import { Chart, registerables} from 'chart.js';
-import Image from "next/image"
-import Avatar from "/public/assets/Avatar_Default.svg"
-import ProfileChart from './ProfileChart';
-import Progress from "/public/assets/Прогресс.svg"
-import Test_button from "/public/assets/testpass.svg"
 import { useRouter } from "next/navigation"
-
 import React, { useState } from 'react';
+
 
 const Test = () => {
   const questions = [
@@ -36,6 +27,7 @@ const Test = () => {
       setCurrentQuestion(nextQuestion);
     } else {
       alert(`Тест завершен! Ваш результат: ${score}`);
+      // router.push("/profile")
     }
   };
 
