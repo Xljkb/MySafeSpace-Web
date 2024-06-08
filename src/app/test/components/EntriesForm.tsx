@@ -164,10 +164,17 @@ const EntriesForm = ({ onSave }) => {
     formData.append('file', blob, 'results.xlsx');
 
     try {
+      console.log('Отправка данных на API маршрут...');
       const response = await axios.post('/api/saveEntries', formData);
-      setResult(response.data);
+      console.log('Ответ от API маршрута:', response.data);
+      
+      // Обработка ответа от API маршрута
+      setResult(response.data.data);  // Извлечение данных из ответа и сохранение в состоянии
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Ошибка при отправке данных на сервер:', error);
+      if (error.response) {
+        console.error('Ответ с ошибкой от API маршрута:', error.response.data);
+      }
       setResult('Ошибка при отправке данных на сервер');
     }
   };
